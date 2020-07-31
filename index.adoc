@@ -10,10 +10,12 @@
 :eo-chap: icon:square-o[]
 :imagesdir: images
 :front-cover-image: image:cover2.jpg[]
+:lang: zh
 //:title-logo-image: image:cover3.jpg[width=500,align=center]
 
 [preface]
 == 前言
+
 想去翻译这本书，主要是因为我自己要学习TLA+语言，顺便练习下文笔和分析知识。
 
 

@@ -2,7 +2,7 @@ STYLE_CSS ?= riak.css
 
 .PHONY: html
 html:
-	asciidoctor -a lang=zh -b html5 -a stylesdir=stylesheets -a stylesheet=$(STYLE_CSS) index.adoc
+	asciidoctor -b html5 -a stylesdir=stylesheets -a stylesheet=$(STYLE_CSS) index.adoc
 
 .PHONY: pdf
 pdf:
