@@ -1,4 +1,6 @@
 STYLE_CSS ?= riak.css
+.PHONY: html
+all: html pdf
 
 .PHONY: html
 html:
