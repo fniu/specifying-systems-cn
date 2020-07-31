@@ -1,0 +1,8 @@
+= 如何描述系统
+牛非 <fei.niu@outlook.com>
+2020年
+:toc: left
+:sectnums:
+:toc-title: Table of Adventures 
+
+include::part01/index.adoc[]

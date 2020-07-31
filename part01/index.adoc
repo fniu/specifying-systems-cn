@@ -1,0 +1,8 @@
+= 准备开始
+
+[partintro]
+--
+
+--
+
+include::chap01-a-little-simple-math.adoc[]
