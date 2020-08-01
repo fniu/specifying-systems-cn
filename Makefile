@@ -1,4 +1,7 @@
 STYLE_CSS ?= riak.css
+
+PDF_OPTS := -r asciidoctor-pdf-cjk-kai_gen_gothic -a pdf-themesdir=pdf-resources/themes -a pdf-theme=KaiGenGothicCN -a pdf-fontsdir=pdf-resources/fonts
+
 .PHONY: html
 all: html pdf
 
@@ -8,5 +11,9 @@ html:
 
 .PHONY: pdf
 pdf:
-	asciidoctor-pdf -r asciidoctor-pdf-cjk-kai_gen_gothic -a pdf-style=KaiGenGothicCN index.adoc
+	asciidoctor-pdf $(PDF_OPTS) index.adoc
+
+.PHONY: print
+print:
+	asciidoctor-pdf -a media=prepress $(PDF_OPTS) index.adoc
 

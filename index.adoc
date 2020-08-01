@@ -1,6 +1,7 @@
 = 如何描述系统: 译自Specifying Systems
 Fel Nil <me@felnil.com>
-2020年07月29日
+2020年07月
+:pagenums:
 :doctype: book
 :toc: left
 :sectnums:
@@ -11,6 +12,7 @@ Fel Nil <me@felnil.com>
 :imagesdir: images
 :front-cover-image: image:cover2.jpg[]
 :lang: zh
+
 //:title-logo-image: image:cover3.jpg[width=500,align=center]
 
 [preface]
