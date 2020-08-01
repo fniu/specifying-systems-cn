@@ -3,6 +3,9 @@
 
 === 命题逻辑
 
+stem:[\int \blacksquare]
+
+
 === 集合
 
 === 谓词逻辑

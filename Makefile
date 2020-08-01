@@ -1,6 +1,6 @@
 STYLE_CSS ?= riak.css
 
-PDF_OPTS := -r asciidoctor-pdf-cjk-kai_gen_gothic -a pdf-themesdir=pdf-resources/themes -a pdf-theme=KaiGenGothicCN -a pdf-fontsdir=pdf-resources/fonts
+PDF_OPTS := -r asciidoctor-mathematical -r asciidoctor-pdf-cjk-kai_gen_gothic -a pdf-themesdir=pdf-resources/themes -a pdf-theme=KaiGenGothicCN -a pdf-fontsdir=pdf-resources/fonts
 
 .PHONY: html
 all: html pdf
