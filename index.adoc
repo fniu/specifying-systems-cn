@@ -1,10 +1,10 @@
-= 如何描述系统: translated from Specifying Systems
-牛非 <fei.niu@outlook.com>
+= 如何描述系统: 译自Specifying Systems
+Fel Nil <me@felnil.com>
 2020年07月29日
 :doctype: book
 :toc: left
 :sectnums:
-:toc-title: Table of Adventures 
+:toc-title: 目录
 :stem: latexmath
 :icons: font
 :eo-chap: icon:square-o[]
@@ -16,7 +16,7 @@
 [preface]
 == 前言
 
-想去翻译这本书，主要是因为我自己要学习TLA+语言，顺便练习下文笔和分析知识。
+想去翻译这本书，主要是因为笔者从事形式化相关工作，能够在学习TLA+语言的同时分享知识。再进一步，用类似语言去重写书中的例子，做为练习。
 
 
 include::part01/index.adoc[]
