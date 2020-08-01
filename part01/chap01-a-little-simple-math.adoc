@@ -3,7 +3,13 @@
 
 === 命题逻辑
 
-stem:[\int \blacksquare]
+stem:[\blacksquare]
+
+stem:[C = \alpha + \beta Y^{\gamma} + \epsilon]
+
+latexmath:[C = \alpha + \beta Y^{\gamma} + \epsilon]
+
+latexmath:[\blacksquare]
 
 
 === 集合
