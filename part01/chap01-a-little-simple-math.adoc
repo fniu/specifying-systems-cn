@@ -3,18 +3,74 @@
 
 === 命题逻辑
 
-stem:[\blacksquare]
-
-stem:[C = \alpha + \beta Y^{\gamma} + \epsilon]
-
-latexmath:[C = \alpha + \beta Y^{\gamma} + \epsilon]
-
-latexmath:[\blacksquare]
-
 
 === 集合
 
 === 谓词逻辑
+
+有了集合之后，就自然而然地想去声明某个公式对于一个集合中所有的元素都为真，或者只对一个集合中某些元素为真。谓词逻辑（predicate logic）相对于命题逻辑， 增加了两个量词（quantifiers）：
+
+- latexmath:[\forall] 全称量词
+
+- latexmath:[\exists] 存在量词
+
+公式 latexmath:[\forall x \in S : F] 表示公式 latexmath:[F] 对于集合S中**每一个**元素来说都为真。例如，latexmath:[\forall n \in Nat : n + 1 > n] 表示公式 latexmath:[n + 1 > n] 对于每一个自然数来说都为真。该公式确实为真。
+
+公式 latexmath:[\exists x \in S : F] 表示公式 latexmath:[F] 对于集合S中**至少一个**元素x来说都为真。例如，latexmath:[\exists n \in Nat : n^2 = 2] 表示存在一个自然数，该自然数的平方为2。该公式为假。
+
+公式 latexmath:[F] 对于集合 latexmath:[S] 中某个元素 latexmath:[x] 为真，等价于 latexmath:[F] 不是对 latexmath:[S] 中所有的元素 latexmath:[x] 为假。换句话说，以下表述不成立：latexmath:[\neg F] 对于 latexmath:[S] 中所有元素为真。因此，公式
+
+[.text-center]
+(1.1) latexmath:[(\exists x \in S : F) \equiv \neg (\forall x \in S : \neg F)]
+
+为谓词逻辑的一个恒真命题，也就是收该公式对于标识符 latexmath:[S] 和 latexmath:[F] 所有可能取值都为真。
+
+空集 latexmath:[\{\}] 不含任何元素，因此公式 latexmath:[\exists x \in \{\}:F]  latexmath:[F] 都为假。根据（1.1）可得公式 latexmath:[\forall x \in \{\}:F] 必须对于每一个 latexmath:[F] 为真。
+
+公式 latexmath:[\forall x \in S>F] 和 latexmath:[\exists x \in S>F] 中的量化（quantification）被称作是有界的（bounded）。其原因是这些公式所做出的断言的主体是一个集合中的元素。无界的量化（unbounded quantification）也是有的。公式 latexmath:[\forall x > F] 就是在说 latexmath:[F] 对于 latexmath:[x] 所有的值都为真，而公式 latexmath:[\exists x > F] 是说至少有一个 latexmath:[x] 的值使得 latexmath:[F] 为真，但这里并没表明该值属于任何一个特定的集合。有界和无界可以被以下的恒真命题联系起来：
+
+[.text-center]
+latexmath:[(\forall x \in S:F) \equiv (\forall x:(x\in S) \implies F)]
+[.text-center]
+latexmath:[(\exists x \in S:F) \equiv (\exists x:(x\in S) \wedge F)]
+
+
+恒真式（1.1）对于无界量词来说同样还是恒真式：
+
+[.text-center]
+latexmath:[(\exists x :F) \equiv \neg(\forall x: \neg F)]
+
+在写规范的时候，应该尽量去使用有界量化，从而让规范更容易被人和计算机所理解。
+
+全称量化概括了逻辑与操作。如果 latexmath:[S] 是一个有限集合，则 latexmath:[\forall x \in S:F] 是将 latexmath:[F] 中的 latexmath:[x] 替换为 latexmath:[X] 中不同元素后得到所有公式的逻辑与连接。例如，
+
+[.text-center]
+latexmath:[(\forall x \in \{2,3,7\} : x < y^x ) \equiv (2< y^2) \wedge (3<y^3) \wedge (7<y^7)]
+
+有时候当我们提到无限多的公式的逻辑与时，从形式化角度的意思是一个全称量词修饰的公式。例如，对于所有自然数 latexmath:[x] 的公式 latexmath:[x \leq y^x] 的逻辑与就写成 latexmath:[\forall x \in Nat:x \leq y^x]。类似地，存在量化概括了逻辑或操作。
+
+逻辑学家使用很多规则用于证明类似（1.1）的恒真命题，但是读者并不需要这些去学习或使用这些规则。读者们对谓词逻辑熟悉只需要达到能够一眼看懂那些简单恒真式的程度。把 latexmath:[\forall] 想成逻辑与以及把 latexmath:[\exists] 想成逻辑或应该能帮助读者熟悉谓词逻辑。例如，从或和与操作的结合律和交换律可得出以下恒真式：
+
+[.text-center]
+latexmath:[(\forall x \in S : F) \wedge (\forall x \in S:G) \equiv (\forall x \in S: F \wedge G)]
+[.text-center]
+latexmath:[(\exists x \in S : F) \vee (\exists x \in S:G) \equiv (\exists x \in S: F \vee G)]
+
+for any set latexmath:[S] and formulas latexmath:[F] and latexmath:[G].
+
+数学家们会用一些缩写来表示嵌套的量词。例如：
+
+latexmath:[\forall x \in S, y\in T:F]  means  latexmath:[\forall x \in S : (\forall y\in T:F)]
+
+latexmath:[\exists w,x,y,z \in S:F]  means  latexmath:[\exists w \in S: (\exists x \in S : (\exists y\in S: (\exists z \in S: F)))]
+
+对于表达式 latexmath:[\exists x \in S:F]，逻辑学家会说 latexmath:[x] 是一个约束变量或受限变量（bound variable），latexmath:[x] 在 latexmath:[F] 中每一次出现都是被约束的（bound）。例如，latexmath:[n] 是一个在公式 latexmath:[\exists n \in Nat:n+1 > n] 中的受限变量。非受限变量就是所谓的自由变量（free variable），而自由变量在公式中每一此出现都是所谓自由出现（free occurrences）。这种说法有点容易误导读者。一个受限变量其实并不是真正的存在于一个公式，因为替换该变量后该公式并没有被改变。以下两个公式
+
+latexmath:[\forall n \in Nat, n +1 > n] and latexmath:[\forall x \in Nat, x +1 > x]
+
+是等价的。
+
+
 
 === 公式和语言
 
