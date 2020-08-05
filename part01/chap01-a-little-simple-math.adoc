@@ -1,18 +1,35 @@
-== 小而简单的数学
+== 些许简单数学
 
 
 === 命题逻辑
 
+初等代数是关于实数和四则运算（加减乘除四个运算符）的数学。命题逻辑是两个布尔值，真（TRUE）和假（FALSE）加上以下五个运算符：
 
-=== 集合
+[horizontal]
+latexmath:[\wedge]:: 逻辑与（and）
+latexmath:[\vee]:: 逻辑或（or）
+latexmath:[\neg]:: 逻辑取反（not）
+latexmath:[\implies]:: 逻辑蕴含（implies）
+latexmath:[\equiv]:: 逻辑等价（is equivalent to）
 
-=== 谓词逻辑
+在学习初等代数的时候，我们得记住加法乘法表，以及多位数的运算法则。命题逻辑就简单的多了，原因是命题逻辑只有两个值，真和假。掌握逻辑运算，只需要了解以下五个布尔运算符的定义：
 
+[horizontal]
+latexmath:[\wedge]:: latexmath:[F \wedge G] 为真，当且仅当 latexmath:[F] 和 latexmath:[G] 都为真。
+latexmath:[\vee]:: latexmath:[F \vee G] 为真，当且仅当 latexmath:[F] 或者 latexmath:[G] 为真（当然也包含两者都为真的情况，因为我们一般用“或”来表示”或“或者”与“。）
+latexmath:[\neg]:: latexmath:[\neg F] 为真，当且仅当 latexmath:[F] 为假。
+latexmath:[\implies]:: latexmath:[F \implies G] 为真，当且仅当 latexmath:[F] 为假，或者 latexmath:[G] 为真。
+latexmath:[\equiv]:: latexmath:[F \equiv G] 为真，当且仅当 latexmath:[F] 和 latexmath:[G] 同为真，或同为假。
+
+我们也可以用真值表（true table）来描述这些运算符的含义。
+
+                       
 有了集合之后，就自然而然地想去声明某个公式对于一个集合中所有的元素都为真，或者只对一个集合中某些元素为真。谓词逻辑（predicate logic）相对于命题逻辑， 增加了两个量词（quantifiers）：
 
-- latexmath:[\forall] 全称量词
+[horizontal]
+latexmath:[\forall]:: 全称量词
 
-- latexmath:[\exists] 存在量词
+latexmath:[\exists]:: 存在量词
 
 公式 latexmath:[\forall x \in S : F] 表示公式 latexmath:[F] 对于集合S中**每一个**元素来说都为真。例如，latexmath:[\forall n \in Nat : n + 1 > n] 表示公式 latexmath:[n + 1 > n] 对于每一个自然数来说都为真。该公式确实为真。
 
@@ -25,7 +42,7 @@
 
 为谓词逻辑的一个恒真命题，也就是收该公式对于标识符 latexmath:[S] 和 latexmath:[F] 所有可能取值都为真。
 
-空集 latexmath:[\{\}] 不含任何元素，因此公式 latexmath:[\exists x \in \{\}:F]  latexmath:[F] 都为假。根据（1.1）可得公式 latexmath:[\forall x \in \{\}:F] 必须对于每一个 latexmath:[F] 为真。
+空集 latexmath:[\{\}] 不含任何元素，因此公式 latexmath:[\exists x \in \{\}:F] 对于任何 latexmath:[F] 都为假。根据（1.1）可得公式 latexmath:[\forall x \in \{\}:F] 对于任何 latexmath:[F] 都为真。
 
 公式 latexmath:[\forall x \in S>F] 和 latexmath:[\exists x \in S>F] 中的量化（quantification）被称作是有界的（bounded）。其原因是这些公式所做出的断言的主体是一个集合中的元素。无界的量化（unbounded quantification）也是有的。公式 latexmath:[\forall x > F] 就是在说 latexmath:[F] 对于 latexmath:[x] 所有的值都为真，而公式 latexmath:[\exists x > F] 是说至少有一个 latexmath:[x] 的值使得 latexmath:[F] 为真，但这里并没表明该值属于任何一个特定的集合。有界和无界可以被以下的恒真命题联系起来：
 
@@ -56,17 +73,17 @@ latexmath:[(\forall x \in S : F) \wedge (\forall x \in S:G) \equiv (\forall x \i
 [.text-center]
 latexmath:[(\exists x \in S : F) \vee (\exists x \in S:G) \equiv (\exists x \in S: F \vee G)]
 
-for any set latexmath:[S] and formulas latexmath:[F] and latexmath:[G].
+for any set latexmath:[S] 和 formulas latexmath:[F] and latexmath:[G].
 
 数学家们会用一些缩写来表示嵌套的量词。例如：
 
-latexmath:[\forall x \in S, y\in T:F]  means  latexmath:[\forall x \in S : (\forall y\in T:F)]
+latexmath:[\forall x \in S, y\in T:F]  意味着  latexmath:[\forall x \in S : (\forall y\in T:F)]
 
-latexmath:[\exists w,x,y,z \in S:F]  means  latexmath:[\exists w \in S: (\exists x \in S : (\exists y\in S: (\exists z \in S: F)))]
+latexmath:[\exists w,x,y,z \in S:F]  意味着  latexmath:[\exists w \in S: (\exists x \in S : (\exists y\in S: (\exists z \in S: F)))]
 
 对于表达式 latexmath:[\exists x \in S:F]，逻辑学家会说 latexmath:[x] 是一个约束变量或受限变量（bound variable），latexmath:[x] 在 latexmath:[F] 中每一次出现都是被约束的（bound）。例如，latexmath:[n] 是一个在公式 latexmath:[\exists n \in Nat:n+1 > n] 中的受限变量。非受限变量就是所谓的自由变量（free variable），而自由变量在公式中每一此出现都是所谓自由出现（free occurrences）。这种说法有点容易误导读者。一个受限变量其实并不是真正的存在于一个公式，因为替换该变量后该公式并没有被改变。以下两个公式
 
-latexmath:[\forall n \in Nat, n +1 > n] and latexmath:[\forall x \in Nat, x +1 > x]
+latexmath:[\forall n \in Nat, n +1 > n] 和 latexmath:[\forall x \in Nat, x +1 > x]
 
 是等价的。
 
