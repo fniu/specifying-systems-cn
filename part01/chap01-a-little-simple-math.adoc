@@ -32,6 +32,9 @@ latexmath:[\equiv]:: latexmath:[F \equiv G] 为真，当且仅当 latexmath:[F] 
 | 假 | 假 | 真
 |===
 
+=== 集合
+
+=== 谓词逻辑
 
 有了集合之后，就自然而然地想去声明某个公式对于一个集合中所有的元素都为真，或者只对一个集合中某些元素为真。谓词逻辑（predicate logic）相对于命题逻辑， 增加了两个量词（quantifiers）：
 
