@@ -21,18 +21,29 @@ latexmath:[\neg]:: latexmath:[\neg F] 为真，当且仅当 latexmath:[F] 为假
 latexmath:[\implies]:: latexmath:[F \implies G] 为真，当且仅当 latexmath:[F] 为假，或者 latexmath:[G] 为真。
 latexmath:[\equiv]:: latexmath:[F \equiv G] 为真，当且仅当 latexmath:[F] 和 latexmath:[G] 同为真，或同为假。
 
-我们也可以用真值表（truth table）来描述这些运算符的含义。下面这个真值表给出 latexmath:[F] 和 latexmath:[G] 取值的所有组合所对应的 latexmath:[F \implies G] 的值。
+我们也可以用真值表（truth table）来描述这些运算符的含义。下面这个真值表给出了 latexmath:[F] 和 latexmath:[G] 取值所有组合所对应的 latexmath:[F \implies G] 的值。
 
-[width=40]
+[options=header, width=50%]
 |===
-| F | G | latexmath:[F \implies G]
+| latexmath:[F] | latexmath:[G] | latexmath:[F \implies G]
+
 | 真 | 真 | 真
+
 | 真 | 假 | 假
+
 | 假 | 真 | 真
+
 | 假 | 假 | 真
 |===
 
+
+很多人觉得实质蕴涵的定义有点绕，不太明白为什么 latexmath:[FALSE \implies TRUE] 和 latexmath:[FALSE \implies FALSE] 为真。要理解为什么其实也很简单。大家应该都能同意说如果一个数 latexmath:[n > 3]，那么它应该大于1。因此，公式 latexmath:[(n>3) \implies (n>1) ] 应该为真。把公式中的 latexmath:[n] 分别替换成4，2和0后再去审视该公式的含义，应能帮助大家理解为什么 latexmath:[F \implies G] 意思是 latexmath:[F] __暗含__ latexmath:[G]，或者说是，__如果__ latexmath:[F] __则__ latexmath:[G]。
+
+等价操作符 latexmath:[\equiv] 就是布尔类型表达式的相等关系（equality）。我们可以把 latexmath:[\equiv] 替换成 latexmath:[=]，但反过来不行（可以写 latexmath:[FALSE = \neg TRUE]，但不可以写 latexmath:[2+2 \equiv 4]）。为了清楚的表明相等关系的表达式是布尔类型，推荐使用 latexmath:[\equiv] 而不是 latexmath:[=] footnote:[第16.1.3节会更详细的解释为什么要用 latexmath:[\equiv] 而不应该用 latexmath:[=]]。
+
 === 集合
+
+TODO.
 
 === 谓词逻辑
 
@@ -85,7 +96,7 @@ latexmath:[(\forall x \in S : F) \wedge (\forall x \in S:G) \equiv (\forall x \i
 [.text-center]
 latexmath:[(\exists x \in S : F) \vee (\exists x \in S:G) \equiv (\exists x \in S: F \vee G)]
 
-for any set latexmath:[S] 和 formulas latexmath:[F] and latexmath:[G].
+对于任意集合 latexmath:[S]，任意公式 latexmath:[F] 和 latexmath:[G].
 
 数学家们会用一些缩写来表示嵌套的量词。例如：
 
