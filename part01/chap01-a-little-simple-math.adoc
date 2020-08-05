@@ -9,7 +9,7 @@
 latexmath:[\wedge]:: 逻辑与（and）
 latexmath:[\vee]:: 逻辑或（or）
 latexmath:[\neg]:: 逻辑取反（not）
-latexmath:[\implies]:: 逻辑蕴含（implies）
+latexmath:[\implies]:: 实质蕴涵或暗含（implies）
 latexmath:[\equiv]:: 逻辑等价（is equivalent to）
 
 在学习初等代数的时候，我们得记住加法乘法表，以及多位数的运算法则。命题逻辑就简单的多了，原因是命题逻辑只有两个值，真和假。掌握逻辑运算，只需要了解以下五个布尔运算符的定义：
