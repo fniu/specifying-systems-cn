@@ -25,7 +25,7 @@ latexmath:[\equiv]:: latexmath:[F \equiv G] 为真，当且仅当 latexmath:[F] 
 
 [options=header, width=50%]
 |===
-| latexmath:[F] | latexmath:[G] | latexmath:[F \implies G]
+| F | G | _F_ => _G_
 
 | 真 | 真 | 真
 
@@ -39,7 +39,7 @@ latexmath:[\equiv]:: latexmath:[F \equiv G] 为真，当且仅当 latexmath:[F] 
 
 很多人觉得实质蕴涵的定义有点绕，不太明白为什么 latexmath:[FALSE \implies TRUE] 和 latexmath:[FALSE \implies FALSE] 为真。要理解为什么其实也很简单。大家应该都能同意说如果一个数 latexmath:[n > 3]，那么它应该大于1。因此，公式 latexmath:[(n>3) \implies (n>1) ] 应该为真。把公式中的 latexmath:[n] 分别替换成4，2和0后再去审视该公式的含义，应能帮助大家理解为什么 latexmath:[F \implies G] 意思是 latexmath:[F] __暗含__ latexmath:[G]，或者说是，__如果__ latexmath:[F] __则__ latexmath:[G]。
 
-等价操作符 latexmath:[\equiv] 就是布尔类型表达式的相等关系（equality）。我们可以把 latexmath:[\equiv] 替换成 latexmath:[=]，但反过来不行（可以写 latexmath:[FALSE = \neg TRUE]，但不可以写 latexmath:[2+2 \equiv 4]）。为了清楚的表明相等关系的表达式是布尔类型，推荐使用 latexmath:[\equiv] 而不是 latexmath:[=] footnote:[第16.1.3节会更详细的解释为什么要用 latexmath:[\equiv] 而不应该用 latexmath:[=]]。
+等价操作符 latexmath:[\equiv] 就是布尔类型表达式的相等关系（equality）。我们可以把 latexmath:[\equiv] 替换成 latexmath:[=]，但反过来不行（可以写 latexmath:[FALSE = \neg TRUE]，但不可以写 latexmath:[2+2 \equiv 4]）。为了清楚的表明相等关系的表达式是布尔类型，推荐使用 latexmath:[\equiv] 而不是 latexmath:[=] footnote:[第16.1.3节会更详细的解释为什么不应该用 =]。
 
 === 集合
 
