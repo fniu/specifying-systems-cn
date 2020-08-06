@@ -3,7 +3,7 @@
 
 === 命题逻辑
 
-初等代数是关于实数和四则运算（加减乘除四个运算符）的数学。命题逻辑是两个布尔值，真（TRUE）和假（FALSE）加上以下五个运算符：
+初等代数是关于实数和四则运算（加减乘除四个运算符）的数学。命题逻辑是两个布尔值，真（TRUE）和假（FALSE）再加上以下五个运算符的数学：
 
 latexmath:[\wedge]:: 逻辑与
 latexmath:[\vee]:: 逻辑或
@@ -116,7 +116,7 @@ latexmath:[\forall n \in Nat, n +1 > n] 和 latexmath:[\forall x \in Nat, x +1 >
 
 '''
 
-icon:arrow-circle-left[] <<_前言,Previous section>>
+icon:arrow-circle-left[]  <<_前言,Previous section>>
 
 icon:arrow-circle-up[] <<_些许简单数学,Current section>>
 
