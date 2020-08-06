@@ -1,4 +1,4 @@
-# Specifying Systems (the Chinese version)
+# 书名：如何使用TLA+语言描述系统
 
 原著：``Specifying Systems: The TLA+ Language and Tools for Hardware and Software Engineers`` by Leslie Lamport.
 

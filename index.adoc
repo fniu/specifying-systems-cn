@@ -1,4 +1,4 @@
-= 如何描述系统: 译自Specifying Systems
+= 如何使用TLA+语言描述系统
 Fel Nil <me@felnil.com>
 2020年07月
 :pagenums:
