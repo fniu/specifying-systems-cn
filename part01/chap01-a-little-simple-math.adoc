@@ -2,8 +2,7 @@
 
 '''
 [.text-center]
-<<_前言,icon:arrow-circle-left[]>> |
-<<_简单时钟系统,icon:arrow-circle-right[]>>
+<<_前言,icon:arrow-circle-left[]>>  <<_简单时钟系统,icon:arrow-circle-right[]>>
 
 '''
 
@@ -27,9 +26,10 @@ latexmath:[\equiv]:: latexmath:[F \equiv G] 为真，当且仅当 latexmath:[F] 
 
 我们也可以用真值表（truth table）来描述这些运算符的含义。下面这个真值表给出了 latexmath:[F] 和 latexmath:[G] 取值所有组合所对应的 latexmath:[F \implies G] 的值。
 
-[options=header, width=50%]
+[options=noheader, width=50%]
 |===
-| _F_ | _G_ | _F_ => _G_
+
+| latexmath:[F] | latexmath:[G] | latexmath:[F \implies G]
 
 | 真 | 真 | 真
 
@@ -55,12 +55,17 @@ latexmath:[\equiv]:: latexmath:[F \equiv G] 为真，当且仅当 latexmath:[F] 
 
 我们每个人从掰手指数数开始学习算术，从零开始学习布尔表达式的各种变换也需要类似的入门方法。手动构造一个公式的真值表就是最好的入门方法。在真值表里，一个公式中所有的变量取值组合，以及所有子公式的取值全部都列举出来。举个例子，由下面这个真值表我们就可以得出 latexmath:[(F \implies G) \equiv (\neg F \vee G)] 是恒等式。
 
-[cols="1,1,2,2,3,4", options=header, width=90%]
+[options=noheader, width=90%]
 |===
-| _F_ | _G_ | _F_ => _G_ | &not; _F_ | &not; _F_ \/ _G_ | (_F_ => _G_) &equiv; &not; _F_ \/ _G_
+
+| latexmath:[F] | latexmath:[G] | latexmath:[F \implies G] | latexmath:[\neg F] | latexmath:[\neg F \vee G] | latexmath:[(F \implies G) \equiv \neg F \vee G]
+
 | 真 | 真 | 真 | 假 | 真 | 真
+
 | 真 | 假 | 假 | 假 | 假 | 真
+
 | 假 | 真 | 真 | 真 | 真 | 真
+
 | 假 | 假 | 真 | 真 | 真 | 真
 
 |===
