@@ -114,10 +114,8 @@ latexmath:[\forall n \in Nat, n +1 > n] 和 latexmath:[\forall x \in Nat, x +1 >
 
 === 公式和语言
 
-'''
 
-icon:arrow-circle-left[]  <<_前言,Previous section>>
 
-icon:arrow-circle-up[] <<_些许简单数学,Current section>>
-
-icon:arrow-circle-right[] <<_简单时钟系统,Next section>>
+<<_前言,icon:arrow-circle-left[]>>
+<<_些许简单数学,icon:arrow-circle-up[]>>
+<<_简单时钟系统,icon:arrow-circle-right[]>>
