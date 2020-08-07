@@ -1,6 +1,5 @@
 == 些许简单数学
 
-'''
 [.text-center]
 <<_前言,icon:arrow-circle-left[]>>  <<_简单时钟系统,icon:arrow-circle-right[]>>
 
@@ -55,7 +54,7 @@ latexmath:[\equiv]:: latexmath:[F \equiv G] 为真，当且仅当 latexmath:[F] 
 
 我们每个人从掰手指数数开始学习算术，从零开始学习布尔表达式的各种变换也需要类似的入门方法。手动构造一个公式的真值表就是最好的入门方法。在真值表里，一个公式中所有的变量取值组合，以及所有子公式的取值全部都列举出来。举个例子，由下面这个真值表我们就可以得出 latexmath:[(F \implies G) \equiv (\neg F \vee G)] 是恒等式。
 
-[options=noheader, width=90%]
+[cols="1,1,2,2,2,4",options=noheader, width=90%]
 |===
 
 | latexmath:[F] | latexmath:[G] | latexmath:[F \implies G] | latexmath:[\neg F] | latexmath:[\neg F \vee G] | latexmath:[(F \implies G) \equiv \neg F \vee G]
