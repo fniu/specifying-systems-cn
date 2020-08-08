@@ -1,6 +1,6 @@
 = 如何使用TLA+语言描述系统
-Fel Nil <me@felnil.com>
-2020年07月
+Fei Niu <me@felnil.com>
+2020年
 :pagenums:
 :stem: latexmath
 :doctype: book
