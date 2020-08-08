@@ -17,7 +17,7 @@ Fel Nil <me@felnil.com>
 //:title-logo-image: image:cover3.jpg[width=500,align=center]
 
 [preface]
-== 前言
+== 序言
 
 想去翻译这本书，主要是因为笔者从事形式化相关工作，能够在学习TLA+语言的
 同时分享知识。再进一步，用类似语言去重写书中的例子，做为练习。

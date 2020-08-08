@@ -1,7 +1,9 @@
 == 些许简单数学
 
 [.text-center]
-<<_前言,icon:arrow-circle-left[]>>  <<_简单时钟系统,icon:arrow-circle-right[]>>
+<<_序言,icon:level-up[]>>
+-
+<<_简单时钟系统,icon:level-down[]>>
 
 '''
 
