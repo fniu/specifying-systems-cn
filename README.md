@@ -2,7 +2,7 @@
 
 原著：``Specifying Systems: The TLA+ Language and Tools for Hardware and Software Engineers`` by Leslie Lamport.
 
-# Issues with asciidoctor-mathematical
+## Issues with asciidoctor-mathematical
 
 - This [issue](https://github.com/asciidoctor/asciidoctor-mathematical/issues/52) with asciidoctor-mathematical would lead to an error when latexmath stems occurs in table cells. A quick fix is suggested in the discussion of this issue.
 
