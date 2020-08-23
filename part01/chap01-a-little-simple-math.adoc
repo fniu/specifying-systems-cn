@@ -14,13 +14,13 @@
 latexmath:[\wedge]:: 逻辑与
 latexmath:[\vee]:: 逻辑或
 latexmath:[\neg]:: 逻辑取反
-latexmath:[\implies]:: 实质蕴涵或暗含
+latexmath:[\implies]:: 实质蕴涵或暗含。*译者注*：一般来说命题逻辑里的实质蕴涵一般使用单线箭头 latexmath:[\rightarrow]，不清楚Lamport老爷爷为啥使用双线箭头。可能是避免和在函数定义里使用的单线箭头冲突吧。
 latexmath:[\equiv]:: 逻辑等价
 
 在学习初等代数的时候，我们得记住加法乘法表，以及多位数的运算法则。命题逻辑就简单的多了，原因是命题逻辑只有两个值，真和假。掌握逻辑运算，只需要了解以下五个布尔运算符的定义：
 
 latexmath:[\wedge]:: latexmath:[F \wedge G] 为真，当且仅当 latexmath:[F] 和 latexmath:[G] 都为真。
-latexmath:[\vee]:: latexmath:[F \vee G] 为真，当且仅当 latexmath:[F] 或者 latexmath:[G] 为真（当然也包含两者都为真的情况，因为我们一般用“或”来表示”或“或者”与“。）
+latexmath:[\vee]:: latexmath:[F \vee G] 为真，当且仅当 latexmath:[F] 或者 latexmath:[G] 为真（当然也包含两者都为真的情况，因为我们一般用“或”来表示”或“或者”与“）。
 latexmath:[\neg]:: latexmath:[\neg F] 为真，当且仅当 latexmath:[F] 为假。
 latexmath:[\implies]:: latexmath:[F \implies G] 为真，当且仅当 latexmath:[F] 为假，或者 latexmath:[G] 为真。
 latexmath:[\equiv]:: latexmath:[F \equiv G] 为真，当且仅当 latexmath:[F] 和 latexmath:[G] 同为真，或同为假。
